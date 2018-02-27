@@ -5,7 +5,7 @@ from decimal import Decimal
 
 def check_to_users(value):
 	targets = value.split(" ")
-	for target in targets: 
+	for target in targets:
 		try:
 			User.objects.get(inn=target)
 		except User.DoesNotExist:
